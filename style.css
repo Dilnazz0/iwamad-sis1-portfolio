@@ -290,14 +290,6 @@ a {
     padding: var(--sp-6) 0;
   }
 
-  h1 {
-    font-size: var(--text-xl);
-  }
-
-  h2 {
-    font-size: var(--text-lg);
-  }
-
   .header-inner {
     flex-direction: column;
     align-items: flex-start;
