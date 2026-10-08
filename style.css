@@ -104,6 +104,19 @@ a {
   justify-content: space-between;
 }
 
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .logo {
   font-size: var(--text-xl);
   margin: 0;
@@ -251,19 +264,6 @@ a {
   font-size: var(--text-sm);
 }
 
-.brand {
-  display: flex;
-  align-items: center;
-  gap: var(--sp-3);
-}
-
-.avatar {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
 @media (min-width: 640px) {
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -283,7 +283,7 @@ a {
 
   .site-header {
     position: static;
-    padding: var(--sp-3) 0;
+    padding: var(--sp-4) 0;
   }
 
   .section {
@@ -296,10 +296,16 @@ a {
     gap: var(--sp-4);
   }
 
-  .nav-list {
+  .brand {
     flex-direction: column;
     align-items: center;
     gap: var(--sp-2);
+  }
+
+  .nav-list {
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--sp-4);
   }
 
   .theme-toggle {
